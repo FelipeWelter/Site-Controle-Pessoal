@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title> Página html no XAMP</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Progresso Animada</title>
+    <style>
+        .bntindex {
+            background-color: #005f70;
+            /* Cor de fundo verde */
+            border: none;
+            /* Sem borda */
+            color: white;
+            /* Cor do texto branco */
+            padding: 15px 32px;
+            /* Espaçamento interno */
+            text-align: center;
+            /* Centralizar o texto */
+            text-decoration: none;
+            /* Sem decoração de texto */
+            display: inline-block;
+            /* Display em linha */
+            font-size: 16px;
+            /* Tamanho da fonte */
+            margin: 4px 2px;
+            /* Margem externa */
+            cursor: pointer;
+            /* Cursor do mouse como ponteiro */
+            border-radius: 10px;
+            /* Borda arredondada */
+        }
+    </style>
+    <style>
+        .progress-bar {
+            width: 300px;
+            height: 30px;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 0;
+            height: 100%;
+            background-color: #00bbff;
+            border-radius: 15px;
+            animation: none;
+            /* Removendo a animação padrão */
+        }
+
+        .progress.animate {
+            animation: progressAnimation 5s ease-in-out infinite;
+        }
+
+        @keyframes progressAnimation {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="site/moduloLogin/login.php"><button class="bntindex">login</button></a>
+    <a href="index.php"><button class="bntindex">PHP</button></a>
+
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+    <button class="bntindex" id="startButton">Iniciar Progresso</button>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function () {
+            var progressElement = document.querySelector('.progress');
+            progressElement.classList.add('animate');
+        });
+    </script>
+</body>
+
+
+</html>
