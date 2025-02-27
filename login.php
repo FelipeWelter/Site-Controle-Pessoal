@@ -2,8 +2,8 @@
 session_start();
 // Configurações do banco de dados
 $servername = "localhost";
-$username = "felipe";
-$password = "Welter45@";
+$username = "root";
+$password = "";
 $dbname = "felipe";
 
 // Define cabeçalhos para impedir o cache

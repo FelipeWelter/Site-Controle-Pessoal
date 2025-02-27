@@ -13,8 +13,8 @@ header("Pragma: no-cache");
 
 // Configurações do banco de dados
 $servername = "localhost";
-$username = "felipe";
-$password = "Welter45@";
+$username = "root";
+$password = "";
 $dbname = "felipe";
 
 // Mensagem de sucesso ou erro

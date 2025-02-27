@@ -7,8 +7,8 @@ if (!isset($_SESSION['userid']) || $_SESSION['userid'] !== true) {
 
 // Conexão com o banco de dados
 $servername = "localhost";
-$username = "felipe";
-$password = "Welter45@";
+$username = "root";
+$password = "";
 $dbname = "felipe";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -13,8 +13,8 @@ header("Pragma: no-cache");
 
 // Configurações do banco de dados
 $servername = "localhost";
-$username = "felipe";
-$password = "Welter45@";
+$username = "root";
+$password = "";
 $dbname = "controle_acesso";
 
 // Mensagem de sucesso ou erro
@@ -202,5 +202,6 @@ tr:hover {
         $conn->close();
         ?>
     </table>
+    <a href="index.php" class="vltr">Voltar</a>
 </body>
 </html>

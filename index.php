@@ -12,8 +12,8 @@ header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 // Conexão com o banco de dados
 $servername = "localhost";
-$username = "felipe";
-$password = "Welter45@";
+$username = "root";
+$password = "";
 $dbname = "felipe";
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Verifica a conexão
