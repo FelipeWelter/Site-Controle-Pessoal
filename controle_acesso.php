@@ -127,6 +127,18 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #f1f1f1;
 }
+.vltr {
+                border-radius: 4px;
+                color: white;
+                background-color:rgb(255, 0, 0);
+                padding: 6px 12px; /* Reduzi o padding entre os botões */
+                border: none;
+                cursor: pointer;
+                font-size: 10px; /* Diminui o tamanho da fonte para caber melhor */
+                text-decoration: none;
+                margin-left: 10px; /* Menor margem entre os botões */
+                display: inline-block;
+            }
 
     </style>
 </head>
@@ -156,6 +168,11 @@ tr:hover {
         <textarea id="observacoes" name="observacoes"></textarea>
         
         <input type="submit" value="Registrar">
+        
+        <form method="post" action="register">
+                <a href="index.php" class="vltr">Voltar</a>
+        </form> 
+
     </form>
 
     <h2>Registros</h2>
@@ -202,6 +219,6 @@ tr:hover {
         $conn->close();
         ?>
     </table>
-    <a href="index.php" class="vltr">Voltar</a>
+
 </body>
 </html>
